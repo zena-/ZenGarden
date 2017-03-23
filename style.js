@@ -14,11 +14,23 @@ $(function() {
   });
 
   $('.dropdown-toggle').dropdown();
+  $('#myDropdown').on('show.bs.dropdown', function () {
+  // do something…
+	})
 
     ////////// Mobile Menu //////////
 
   $('a.menu-icon').click(function() {
     $('#menu-link').slideToggle();
   });
+
+    ////////// date ///////////
+    $('input[name="birthdate"]').daterangepicker({
+        singleDatePicker: true,
+        showDropdowns: true
+    }, 
+    function(start, end, label) {
+        var years = moment().diff(start, 'years');
+    });
   
 });

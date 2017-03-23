@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
 @import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
+@import url('https://fonts.googleapis.com/css?family=Harmattan');
 
 
 .welcome {
@@ -60,10 +60,11 @@
 p {
 	/*color: rgb(34, 34, 34);*/
 	/*font-family: 'Source Code Pro', monospace;*/
-	font-family: 'Josefin Slab', serif;
+	font-family: 'Harmattan', sans-serif;
+	font-size: larger;
 }
 #h2, #h4{
-	font-family: 'Josefin Slab', serif;
+	font-family: 'Harmattan', sans-serif;
 }
 #h1 {
 	font-family: 'Nothing You Could Do', cursive;
@@ -100,7 +101,7 @@ p {
   display: none;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 770px) {
 	#navbar nav a.menu-icon {
     display: block;
     float: right;
@@ -124,10 +125,16 @@ p {
   }
 }
 
+/*@media only screen and (max-width: 380px) {
+	.dna {padding-right: 34px;}
+}*/
+
 .world {
 	/*background: rgba(34, 34, 34, 0.4);*/
+	background: rgba(228, 226, 210, 0.4);
 	width: 100%;
-	padding: 10px;
+	padding: 7px;
+	margin: 0;
 	/*margin-top: 125px;*/
 	/*color: rgb(212, 203, 190);*/
 }
